@@ -1,9 +1,9 @@
 package swqs;
 
 public class Calculator implements ICalculator {
-
     /**
      * Summiert alle übergebenen Werte
+     *
      * @param values Integer-Werte ; int... = variable Parameteranzahl
      * @return Summe aller übergebenen Integer-Werte
      */
@@ -19,17 +19,6 @@ public class Calculator implements ICalculator {
     }
 
     /**
-     * Subtrahiert alle übergebenen Werte
-     *
-     * @param values Integer-Werte ; int... = variable Parameteranzahl
-     * @return Differenz aller übergebenen Integer-Werte
-     */
-    @Override
-    public long sub(int... values) {
-        return 0;
-    }
-
-    /**
      * Multipliziert alle übergebenen Werte
      *
      * @param values Integer-Werte; int... = variable Parameteranzahl
@@ -37,6 +26,28 @@ public class Calculator implements ICalculator {
      */
     @Override
     public long mul(int... values) {
+        long product = 1; // 1* Zahl = Zahl
+        if (values != null && values.length>0) {
+            for (int aValue : values) {
+                if (aValue == 0) {
+                    return 0;
+                } else {
+                    product *= aValue;
+                }
+            }
+            return product;
+        }
+        return 0;
+    }
+
+    /**
+     * Subtrahiert alle übergebenen Werte
+     *
+     * @param values Integer-Werte ; int... = variable Parameteranzahl
+     * @return Differenz aller übergebenen Integer-Werte
+     */
+    @Override
+    public long sub(int... values) {
         return 0;
     }
 
