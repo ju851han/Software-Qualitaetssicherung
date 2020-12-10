@@ -69,7 +69,7 @@ public class MyStringTest {
      * 2.+3. Phase vom 4-Phasen-Testmuster: EXERCISE (=.equals) + VERIFY (=Assert.assertTrue)
      */
     @Test
-    public void testIsSameObject() {
+    public void testSameObject() {
         Assert.assertTrue(myString.equals(myString));
 
     }
