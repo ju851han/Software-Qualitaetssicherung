@@ -3,6 +3,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * Aufgabe 2 b
+ */
 public class MyStringTest {
     /**
      * Subject under Test (SUT) vom 4-Phasen-Testmuster

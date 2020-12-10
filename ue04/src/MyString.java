@@ -1,5 +1,6 @@
-import java.util.Arrays;
-
+/**
+ * Aufgabe 2
+ */
 public class MyString {
     private final char value[];
 
