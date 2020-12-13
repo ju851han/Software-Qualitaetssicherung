@@ -1,5 +1,5 @@
 import org.junit.After;
-import org.junit.Assert;
+import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,7 +8,7 @@ import org.junit.Test;
  */
 public class MyStringTest {
     /**
-     * Subject under Test (SUT) vom 4-Phasen-Testmuster
+     * System under Test (SUT) vom 4-Phasen-Testmuster
      */
     private static MyString myString;
 
@@ -37,7 +37,7 @@ public class MyStringTest {
     @Test
     public void testDifferentDigits() {
         Object o = new MyString("b");
-        Assert.assertFalse(myString.equals(o));
+        assertFalse(myString.equals(o));
     }
 
     /**
@@ -47,7 +47,7 @@ public class MyStringTest {
     @Test
     public void testSameDigits() {
         Object o = new MyString("a");
-        Assert.assertTrue(myString.equals(o));
+        assertTrue(myString.equals(o));
     }
 
     /**
@@ -56,7 +56,7 @@ public class MyStringTest {
     @Test
     public void testDifferentLength() {
         Object o = new MyString("ba");
-        Assert.assertFalse(myString.equals(o));
+        assertFalse(myString.equals(o));
     }
 
     /**
@@ -65,7 +65,7 @@ public class MyStringTest {
     @Test
     public void testNoInstanceOfMyString() {
         String str = "a";
-        Assert.assertFalse(myString.equals(str));
+        assertFalse(myString.equals(str));
     }
 
     /**
@@ -73,7 +73,7 @@ public class MyStringTest {
      */
     @Test
     public void testSameObject() {
-        Assert.assertTrue(myString.equals(myString));
+        assertTrue(myString.equals(myString));
 
     }
 }
