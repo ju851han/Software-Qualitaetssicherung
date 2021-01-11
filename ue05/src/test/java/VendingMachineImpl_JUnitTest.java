@@ -15,16 +15,24 @@ import org.junit.rules.ExpectedException;
 public class VendingMachineImpl_JUnitTest {
     private VendingMachineImpl vendingMachine; // = System Under Test
 
+    /**
+     * setUp() wird vor dem Test ausgeführt
+     */
     @Before
     public void setUp() {
         vendingMachine = new VendingMachineImpl(new UnlimitedCashBox(), new Box[]{new FullBox()});
     }
 
+    /**
+     * Regel: Es wird erwartet, dass keine Exception geworfen wird
+     */
     @Rule
     public ExpectedException exceptionRule = ExpectedException.none();
 
+
     /**
-     * source: https://www.baeldung.com/junit-assert-exception
+     * Testet, ob eine Exception geworfen wird
+     * @throws Exception
      */
     @Test
     public void testselectItem() throws Exception {
