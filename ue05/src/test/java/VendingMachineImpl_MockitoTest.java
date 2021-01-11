@@ -9,9 +9,9 @@ import org.mockito.Mockito;
  */
 public class VendingMachineImpl_MockitoTest {
     @Mock
-    CashBox cashBox;
+    private CashBox cashBox;
     @Mock
-    Box box;
+    private Box box;
     @InjectMocks
     VendingMachineImpl vendingMachine;
 
