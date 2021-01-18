@@ -24,14 +24,15 @@ verify [5]
 
 
 **Übung2**<br>
-a) Implementieren Sie einen JUnitTest als Maven Projekt, welcher den Positivfall überprüft (genügend Geld eingezahlt und ein volles Fach)
+a) Implementieren Sie einen JUnitTest als Maven Projekt, welcher den Positivfall überprüft (genügend Geld eingezahlt und ein volles Fach)<br>
 https://github.com/ju851han/Software-Qualitaetssicherung/blob/master/ue05/src/test/java/VendingMachineImpl_JUnitTest.java
 
-b) Implementieren Sie den Test mit Hilfe von Mockito neu. Mocken Sie hierzu geeignete Objekte.
+b) Implementieren Sie den Test mit Hilfe von Mockito neu. Mocken Sie hierzu geeignete Objekte.<br>
 https://github.com/ju851han/Software-Qualitaetssicherung/blob/master/ue05/src/test/java/VendingMachineImpl_MockitoTest.java
 
 **Übung3**<br>
-Bisher haben wir uns die Mock-Objekte immer komplett von Mockito erzeugen lassen. Manchmal wollen wir jedoch nur bestimmte Methoden gesondert behandeln und für den Rest ein tatsächliches Objekt benutzen. Auch hierzu bietet uns Mockito ein entsprechendes Konstrukt an: Wir können mit Mockito.Spy einen „Spion“ auf ein existierendes Objekt erzeugen lassen. Dieser Spion dient als Wrapper und leitet, sofern nichts anderes konfiguriert wurde, alle Methodenaufrufe an ein echtes Objekt weiter. Nutzen Sie Mockito.Spy für Ihre Tests.
+Bisher haben wir uns die Mock-Objekte immer komplett von Mockito erzeugen lassen. Manchmal wollen wir jedoch nur bestimmte Methoden gesondert behandeln und für den Rest ein tatsächliches Objekt benutzen. Auch hierzu bietet uns Mockito ein entsprechendes Konstrukt an: Wir können mit Mockito.Spy einen „Spion“ auf ein existierendes Objekt erzeugen lassen. Dieser Spion dient als Wrapper und leitet, sofern nichts anderes konfiguriert wurde, alle Methodenaufrufe an ein echtes Objekt weiter. Nutzen Sie Mockito.Spy für Ihre Tests.<br>
+https://github.com/ju851han/Software-Qualitaetssicherung/blob/master/ue05/src/test/java/VendingMachineImpl_Spy.java
 
 **Übung4**<br>
 Stellen Sie Vor- und Nachteile von JUnit im Vergleich zu Mockito dar.
