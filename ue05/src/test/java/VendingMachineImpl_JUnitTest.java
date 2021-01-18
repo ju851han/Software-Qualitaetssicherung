@@ -11,6 +11,7 @@ import org.junit.rules.ExpectedException;
  * Aufgabe 2a
  * Alternative Lösung: in selectItem() Methode ein return true hinzufügen & Rückgabewert auf boolean setzen
  * und den Test mittels assertTrue(vendingMachine.selectItem(0)); auszuführen
+ * Weitere Alternative: http://openbook.rheinwerk-verlag.de/javainsel/21_002.html#u21.2.6
  */
 public class VendingMachineImpl_JUnitTest {
     private VendingMachineImpl vendingMachine; // = System Under Test
