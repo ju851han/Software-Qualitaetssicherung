@@ -20,7 +20,7 @@ verify [5]
 [2] new TimeProvider(“t01”);<br>
 [3] display.sayHello()<br>
 [4] “Hello”<br>
-[5] (timeProvider, times(1) ).findById(“t01”);<br>
+[5] (timeProvider, times(0) ).findById(“t01”);<br>
 
 
 **Übung2**<br>
